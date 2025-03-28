@@ -1,15 +1,15 @@
 /* styles.css */
 
 body {
-  margin: 0;
+  background-color: #121212;
+  color: #f0f0f0;
   font-family: 'Inter', sans-serif;
-  background: #ffffff;
-  color: #111;
   line-height: 1.6;
+  margin: 0;
 }
 
 header {
-  background: #f9f9f9;
+  background: #1e1e1e;
   padding: 2.5rem 1rem;
   text-align: center;
 }
@@ -33,13 +33,13 @@ nav {
 nav a {
   margin: 0 1rem;
   text-decoration: none;
-  color: #333;
+  color: #f0f0f0;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #0077ff;
+  color: #66ccff;
 }
 
 section {
@@ -57,11 +57,11 @@ h2 {
 }
 
 .project {
-  background: #fafafa;
+  background: #2a2a2a;
   padding: 1rem 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .project h3 {
@@ -81,22 +81,22 @@ li {
   display: inline-block;
   margin: 0 0.6rem;
   text-decoration: none;
-  color: #444;
+  color: #ccc;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .contact a:hover {
-  color: #0077ff;
+  color: #66ccff;
 }
 
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  background: #f9f9f9;
+  background: #1e1e1e;
   font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #eee;
+  color: #aaa;
+  border-top: 1px solid #333;
 }
 
 @media (max-width: 600px) {
