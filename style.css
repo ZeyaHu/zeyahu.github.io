@@ -1,0 +1,112 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #111;
+  line-height: 1.6;
+}
+
+header {
+  background: #f9f9f9;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #0077ff;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  color: #222;
+}
+
+.project {
+  background: #fafafa;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.project h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 0 0.6rem;
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #0077ff;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  nav a {
+    margin: 0 0.5rem;
+  }
+}
