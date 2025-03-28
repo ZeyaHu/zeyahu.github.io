@@ -1,0 +1,76 @@
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f9f9f9;
+  --nav: #333333;
+}
+body.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --card: #2a2a2a;
+  --nav: #cccccc;
+}
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+header {
+  background: var(--card);
+  padding: 2.5rem 1rem;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+nav {
+  margin: 1rem 0;
+}
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--nav);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #66ccff;
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+.project {
+  margin-bottom: 1.5rem;
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--card);
+  font-size: 0.9rem;
+  color: var(--nav);
+  border-top: 1px solid #ddd;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.contact a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: var(--nav);
+  transition: color 0.3s ease;
+}
+.contact a:hover {
+  color: #66ccff;
+}
