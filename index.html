@@ -9,19 +9,57 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <section class="hero-intro left-biased fade-in-on-scroll">
+    <div class = "container">
+      <div class="profile">
+        <img src="avatar.jpg" alt="Zeya Hu" class="avatar" />
+        <div class="profile-text">
+          <h1>I'm Zeya Hu <span>✨</span></h1>
+          <p class="subtitle">Digital Strategist & Product Communicator</p>
+        </div>
+      </div>
+      
+      <h2 class="tagline">
+        Strategic storytelling & creative growth for modern brands and creators.
+      </h2>
+
+      <!-- ✅ 按钮 -->
+    <a href="#projects" class="explore-button">
+      <span>Explore My Works</span>
+      <div class="icon-circle">
+        <img src="right-arrow-circle-regular-24.png" alt="arrow" />
+      </div>
+    </a>
+
+  </div>
+  </section>
+  <section class="works-section fade-in-on-scroll">
+    <div class="container">
+      <div class="works-grid">
+        <img src="img1.jpg" alt="Cat 1">
+        <img src="img2.jpg" alt="Dog">
+        <img src="img3.jpg" alt="Cat 2">
+        <img src="img4.jpg" alt="Cat 3">
+      </div>
+    </div>
+  </section>
+  <button id="theme-toggle" style="position:absolute; top:1rem; right:1rem;"><img id="theme-icon" src="moon-regular-24.png" alt="Theme Icon" /></button>
+  <!-- <header>
     <h1>Zeya Hu</h1>
     <p>Digital strategist | Creator economy | Communication innovator</p>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html">Portfolio</a>
       <a href="about.html">About Me </a>
-      <a href="work.html">Projects&Experience</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <button id="theme-toggle" style="position:absolute; top:1rem; right:1rem;"><img id="theme-icon" src="moon-regular-24.png" alt="Theme Icon" /></button>
-  </header>
+    
+  </header> -->
 
   <main>
+
+    
+    
+
     <section id="about" class="fade-in-on-scroll">
       <h2>About Me</h2>
       <p>I'm a communication strategist with experience across content marketing, product launches, and creator platforms. Currently a graduate student at USC Annenberg with a BA from Emerson College, I specialize in combining data and creativity to shape digital experiences.</p>
@@ -72,7 +110,7 @@
     const themeIcon = document.getElementById("theme-icon");
 
     const setIcon = (isDark) => {
-      themeIcon.src = isDark ? "sun-regular-24.png" : "moon-regular-24.png";
+      themeIcon.src = isDark ? "moon-regular-24.png" : "sun-regular-24.png";
     };
 
     const theme = localStorage.getItem("theme");
