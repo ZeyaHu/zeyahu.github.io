@@ -48,8 +48,8 @@ main {
 h2 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #eee;
   padding-bottom: 0.5rem;
+  border-bottom: none; 
 }
 .project {
   margin-bottom: 1.5rem;
@@ -276,4 +276,114 @@ p, li, h1, h2, h3, h4, h5, h6 {
   .works-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* about-section */
+.about-section {
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* 左图卡片 */
+.about-card {
+  background-color: var(--card);
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+  max-width: 300px;
+}
+
+/* 右文字卡片 */
+.about-content {
+  flex: 1;
+  background-color: var(--card);
+  padding: 2rem;
+  border-radius: 16px;
+  color: var(--text);
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* 图片内部样式 */
+.about-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+}
+.about-content {
+  flex: 2;
+  color: var(--text);
+}
+
+.about-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.tools {
+  font-weight: 600;
+  color: var(--text);
+  margin-top: 1rem;
+}
+
+.download-resume {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.download-resume:hover {
+  background: #f2f2f2;
+  color: #111;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* 使图标在深色背景下变白 */
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.8;
+}
+
+.social-icons a:hover img {
+  opacity: 0.7;
 }
